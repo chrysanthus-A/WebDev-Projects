@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-pane {
+    width: 200px;
+    background-color: #eee;
+    border-right: 1px solid #ccc;
+    box-shadow: 5px 0px 10px rgba(48, 28, 28, 0.2);
+}
+
+.right-pane {
+    width: 200px;
+    background-color: #eee;
+    border-left: 1px solid #ccc;
+    box-shadow: -5px 0px 20px rgba(43, 27, 27, 0.2);
+    display: None;
+}
+
+.middle-pane {
+    flex: 1;
+    padding: 20px;
+}
