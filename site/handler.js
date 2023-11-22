@@ -1,5 +1,5 @@
 const leftPaneElements = document.querySelectorAll('.left-pane');
-const rightPane = document.getElementsByClassName('.right-pane');
+const rightPane = document.getElementsByClassName('right-pane')[0];
 
 for (const element of leftPaneElements) {
   element.addEventListener('click', (event) => {
@@ -13,16 +13,13 @@ for (const element of leftPaneElements) {
     rightPane.innerHTML = clickedContent;
 
     // Show the right pane after loading content
+    
     rightPane.style.display = 'block';
   });
 }
 
 // Add a click event listener to hide the right pane on clicks outside the left pane elements
-document.addEventListener('click', (event) => {
-  if (!event.target.classList.contains('left-pane')) {
-    rightPane.style.display = 'none';
-  }
-});
+
 
 // Function to load content based on the clicked element text
 function loadContent(clickedText) {
@@ -35,6 +32,7 @@ function loadContent(clickedText) {
     case 'Link 3':
       return '<h1>This is the content for Link 3</h1>';
     default:
+      rightPane.style.display = 'none';
       return '';
   }
 }

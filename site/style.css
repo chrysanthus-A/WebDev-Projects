@@ -20,10 +20,16 @@ body {
     background-color: #eee;
     border-left: 1px solid #ccc;
     box-shadow: -5px 0px 20px rgba(43, 27, 27, 0.2);
-    display: block;
+    display: none;
 }
 
 .middle-pane {
     flex: 1;
     padding: 20px;
+}
+.left-pane li {
+        width : 100px;
+        background-color: grey;
+        color : black;
+        margin-bottom: 5px;
 }
