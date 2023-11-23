@@ -1,0 +1,62 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+div {
+    box-sizing: border-box;
+    margin: 0 0 2px 0;  
+    float : left;
+    position: relative;
+}
+section {
+    background-color: grey;
+    border: black solid 1px;
+    text-align: center;
+    width: 100%;
+    float : right;
+    clear: right;
+}
+body {
+    margin:0;
+}
+
+h1 {
+    font-size: 175%;
+}
+
+.title {
+    float : right;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border: 1px solid black;
+    padding: 0;
+    box-sizing: border-box;
+    background-color : aqua;
+    font-size: 125%;
+    
+    
+}
+
+@media (min-width: 992px) {
+    /* Desktop size */
+    .ld-div {
+        width : 33%;
+        
+        
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    /* medium size screen */
+    .md-div {
+        width : 50%;
+        
+    }   
+}
+
+@media (max-width:767px) {
+    .sd-div {
+        width: 100%;
+        
+    }
+}
